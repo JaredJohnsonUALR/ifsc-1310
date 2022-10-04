@@ -1,4 +1,59 @@
-body
-{
-    background-color:darkorchid;
-}
+/* ---------------Box Sizing----------------- */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /* ----------------- Global Styles-----------------  */
+
+  body
+  {
+    font-family: 'Gemunu Libre', sans-serif;
+    margin:0;
+  }
+
+  header.primary
+  {
+    background-color:darkviolet;
+    text-align:center;
+    color:#fff;
+
+    /*long form
+    padding-top:40px;
+    padding-right:40px;
+    padding-bottom:40px;
+    padding-left:40px;
+    */
+
+    /*short hand (top right bottom left
+    padding: 40px 40px 40px 40px;
+    */
+
+    /*shorter hand if opposite sides are equal (top/bottom right/left
+    padding: 40px 40px;
+    */
+
+    /*shorter hand if all values are the same*/
+    padding: 40px;
+
+    text-shadow: 1px 1px #000000;
+  }
+
+  header.primary h1
+  {
+    font-size: 2.6rem;
+    margin: 20px 0;
+  }
+
+  header.primary h1 a
+  {
+    color:#fff;
+    text-decoration:none;
+  }
+
+  /*get a color theme*/
