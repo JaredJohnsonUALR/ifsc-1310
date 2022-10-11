@@ -9,13 +9,13 @@ html {
     box-sizing: inherit;
   }
 
-  /* ---------------Utility Classes----------------- */
+/* ---------------Utility Classes----------------- */
 
 /*target anything with container class*/
 .container
 {
   /*width is 70% of view width*/
-  width:70vw;
+  width:80vw;
 
   /*margin is 40px top/bottom and auto on left/right*/
   margin: 40px auto;
@@ -23,6 +23,12 @@ html {
   max-width:960px;
 }
 
+
+/* ---------------Responsive Images----------------- */
+img
+{
+  max-width:100%;
+}
 
 
   /* ----------------- Global Styles-----------------  */
@@ -81,9 +87,9 @@ html {
     margin: 20px auto 40px;
   }
 
-  header.primary nav
-  {
+  header.primary nav{
     max-width:960px;
+    margin:auto;
   }
 
   header.primary ul
@@ -119,6 +125,103 @@ html {
     background:rgba(0,0,0,.8);
   }
 
+  #intro
+  {
+    border-bottom:1px solid #D95204;
+    padding-bottom:.4rem;
+  }
+
+  #intro h2
+  {
+    color:#731702;
+    border-bottom: 1px solid #D95204;
+  }
+
+  #content
+  {
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom:1px solid #D95204;
+    padding-bottom:2.9rem;
+  }
+
+  #content .post
+  {
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,.4);
+    padding:10px;
+    border-radius:4px;
+    font-size:.9rem;
+    transition: .5s;
+  }
+
+  #content article.post:hover
+  {
+    box-shadow: 0 8px 16px rgba(0,0,0,.4);
+  }
+
+  article.post figure
+  {
+    margin:0;
+  }
+
+  time.post-date, figcaption, .post-meta
+  {
+    text-transform:uppercase;
+    color:#F28705;
+  }
+
+  article.post figure img
+  {
+    border:1px solid #733702;
+    padding:2px;
+    border-radius:4px;
+    margin: 5px auto;
+  }
+
+  article.post a
+  {
+    color:#731702;
+  }
+
+  article.post a:hover
+  {
+    text-decoration: none;
+  }
+
+  aside[role="complementary"]
+  {
+    background-color:#F28705;
+    color:#731702;
+    padding:1rem;
+  }
+
+  aside .container
+  {
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  aside article.widget
+  {
+    width:45%;
+  }
+
+  article.widget a
+  {
+    color:#733702;
+    display:block;
+    text-align:right;
+    margin-top:.4rem;
+  }
+
+  article.widget footer
+  {
+    display:none;
+  }
+  
   /*when screen is less than max-width, the ayout changes to this*/
   @media screen and (max-width:600px)
   {
