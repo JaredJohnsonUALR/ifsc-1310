@@ -66,6 +66,7 @@ body
 {
   font-family: 'Gemunu Libre', sans-serif;
   margin:0;
+  line-height:1.5rem;
 }
 
 header.primary
@@ -308,6 +309,12 @@ td
 {
   border:1px solid #000000;
   padding:5px;
+  text-align:right;
+}
+
+td:first-of-type
+{
+  text-align:left;
 }
 
 #demo a:hover
@@ -339,6 +346,11 @@ td
   padding:10px 0px;
 }
 
+#demo li ul > li
+{
+  list-style-type:square;
+}
+
 #demo ul li:nth-child(odd)
 {
   color:#D95204;
@@ -360,6 +372,12 @@ td
   color:#D95204;
 }
 
+/* adjacent sibling combinator */
+#demo dd + dt
+{
+  margin-top:20px;
+}
+
 #demo h4
 {
   color:#731702;
@@ -370,11 +388,16 @@ td
 #demo blockquote
 {
   background:rgba(242, 135, 4, 0.8);
-  border-left:5.5px solid #731702;
+  border:6px double rgba(114, 22, 2, 1);
+  border-radius:6px;
+  padding: 30px 40px;
+  font-size:1.2rem;
 }
 
 #demo cite
 {
+  font-weight:bold;
+  font-size:.9rem;
   display:block;
   text-align:right;
 }
@@ -445,6 +468,27 @@ article.widget footer
   header.primary nav li
   {
     margin-bottom:10px;
+  }
+
+  #content
+  {
+    flex-direction:column;
+  }
+
+  #content article.post
+  {
+    width:100%;
+    margin-bottom:20px;
+  }
+
+  aside .container
+  {
+    flex-direction:column;
+  }
+
+  aside .container article.widget
+  {
+    width:100%;
   }
 }
 
