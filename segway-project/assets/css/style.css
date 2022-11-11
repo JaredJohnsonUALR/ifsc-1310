@@ -51,6 +51,7 @@ img
     height: auto;
 }
 
+/*Global Styles*/
 body
 {
   font-family: 'Gemunu Libre', sans-serif;
@@ -58,6 +59,19 @@ body
   line-height:1.5rem;
 }
 
+h2
+{
+  padding-top:20px;
+  font-size: 4em;
+  text-align:center;
+}
+
+p
+{
+  font-size:1.3rem;
+}
+
+/*Header*/
 header.primary 
 {
     background-color: #023535;
@@ -105,12 +119,12 @@ header.primary h1 a {
   {
     font-family: "Gemunu Libre";
     font-size: 4em;
-    /* Shorhand Three Value Top, Left/Right, Bottom*/
     margin: 20px auto 40px;
     position: relative;
   }
   
-  header.primary nav ul {
+  header.primary nav ul 
+  {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -120,28 +134,130 @@ header.primary h1 a {
     margin: 20px auto;
   }
   
-  header.primary nav li {
+  header.primary nav li 
+  {
     list-style-type: none;
     padding: 0;
     width: 20%;
   }
   
   header.primary nav a:link,
-  header.primary nav a:visited {
+  header.primary nav a:visited 
+  {
     color: white;
     text-decoration: none;
-    background-color: #000000;
-    background-color: rgba(142, 166, 184, 0.4);
+    background-color: #023535;
+    background-color: rgba(2, 53, 53, 0.4);
     padding: 8px 16px;
     border-radius: 10px;
     transition: 0.6s;
     display: block;
   }
   
-  header.primary nav a:hover,
-  header.primary nav a:active {
+  header.primary nav a:hover, header.primary nav a:active 
+  {
     background-color: rgba(51, 83, 107, 0.8);
   }
+  /*articles*/
+
+  #articlecontent
+  {
+    background-color: #015958;
+    padding:10px;
+  }
+
+  #articlesheader h2
+  {
+    color:#0FC2C0;
+  }
+
+  #articlesheader p
+  {
+    color:#ffffff
+  }
+
+  #articles
+  {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  #articles .post
+  {
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0,0,0,.4);
+    background-color: #008F8C;
+    padding:10px;
+    margin-bottom: 20px;
+    border-radius:4px;
+    font-size:1.1rem;
+    transition: .5s;
+    color:#fff;
+  }
+
+  #articles ul
+  {
+    margin: 20px;
+    padding: 0;
+  }
+
+  #articles li
+  {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  #articles p
+  {
+    margin:20px;
+  }
+
+  #articles article.post:hover
+  {
+    box-shadow: 0 8px 16px rgba(0,0,0,.4);
+  }
+
+  article.post figure
+  {
+    margin:0;
+  }
+
+  time.post-date, figcaption, .post-meta
+  {
+    text-transform:uppercase;
+    color:#008F8C;
+  }
+
+  article.post figure img
+  {
+    border:1px solid #015958;
+    padding:2px;
+    border-radius:4px;
+    margin: 5px auto;
+  }
+
+
+/*Footer*/
+#colophon h6
+{
+  padding:20px;
+  margin:0;
+  text-align:center;
+  color:#0FC2C0;
+  font-size:.9rem;
+}
+  
+#colophon
+{
+  background-color:#023535;
+}
+
+#colophon h6 a:link, #colophon h6 a:visited 
+{
+  color: #0FC2C0;
+}
 
 /* Color Theme Swatches in Hex */
 .Teals-1-hex { color: #0FC2C0; }
