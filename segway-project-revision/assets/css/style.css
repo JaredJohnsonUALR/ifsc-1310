@@ -1,0 +1,281 @@
+/* ---------------Box Sizing----------------- */
+
+html 
+{
+    box-sizing: border-box;
+}
+  *,
+  *:before,
+  *:after 
+  {
+    box-sizing: inherit;
+  }
+
+/* ----- Utility Styles ---- */
+
+.container 
+{
+    width: 80vw;
+    margin: 40px auto;
+    max-width: 900px;
+}
+  
+.img-right 
+{
+    float: right;
+    margin: 10px 0 10px 20px;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+}
+  
+.img-left 
+{
+    float: left;
+    margin: 10px 20px 10px 0;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+}
+  
+.img-center 
+{
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+}
+
+/* ---- Responsive Images ----*/
+img 
+{
+    max-width: 100%;
+    height: auto;
+}
+
+/*Global Styles*/
+body
+{
+  font-family: 'Gemunu Libre', sans-serif;
+  margin:0;
+  line-height:1.5rem;
+}
+
+h2
+{
+  padding-top:20px;
+  font-size: 4em;
+  text-align:center;
+}
+
+p
+{
+  font-size:1.3rem;
+}
+
+/*Header*/
+header.primary 
+{
+    background-color: #023535;
+    text-align: center;
+    color: #0FC2C0;
+    text-shadow: 2px 2px #000000;
+    padding: 6em 2em;
+    position: relative;
+}
+
+header.primary::before 
+{
+    content: "";
+    background-image: url("../img/segwaybackground.jpg"),url("../img/segwaybackground2.jpg");
+    background-repeat:no-repeat,repeat;
+    background-size:50% 100%;
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+
+header.primary h1 
+{
+    font-size: 3.2rem;
+    margin: 20px 0;
+    position: relative;
+}
+
+header.primary h1 a {
+    color: #ffffff;
+    background-image: url("../img/segway_color_logo.jpg");
+    display: block;
+    width: 376px;
+    height: 215px;
+    margin: 0 auto;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  header.primary h2 
+  {
+    font-family: "Gemunu Libre";
+    font-size: 4em;
+    margin: 20px auto 40px;
+    position: relative;
+  }
+  
+  header.primary nav ul 
+  {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  
+  header.primary nav li 
+  {
+    list-style-type: none;
+    padding: 0;
+    width: 20%;
+  }
+  
+  header.primary nav a:link,
+  header.primary nav a:visited 
+  {
+    color: white;
+    text-decoration: none;
+    background-color: #023535;
+    background-color: rgba(2, 53, 53, 0.4);
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: 0.6s;
+    display: block;
+  }
+  
+  header.primary nav a:hover, header.primary nav a:active 
+  {
+    background-color: rgba(51, 83, 107, 0.8);
+  }
+  /*articles*/
+
+  #articlecontent
+  {
+    background-color: #015958;
+    padding:10px;
+  }
+
+  #articlesheader h2
+  {
+    color:#0FC2C0;
+  }
+
+  #articlesheader p
+  {
+    color:#ffffff
+  }
+
+  #articles
+  {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  #articles .post
+  {
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0,0,0,.4);
+    background-color: #008F8C;
+    padding:10px;
+    margin-bottom: 20px;
+    border-radius:4px;
+    font-size:1.1rem;
+    transition: .5s;
+    color:#fff;
+  }
+
+  #articles ul
+  {
+    margin: 20px;
+    padding: 0;
+  }
+
+  #articles li
+  {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  #articles p
+  {
+    margin:20px;
+  }
+
+  #articles article.post:hover
+  {
+    box-shadow: 0 8px 16px rgba(0,0,0,.4);
+  }
+
+  article.post figure
+  {
+    margin:0;
+  }
+
+  time.post-date, figcaption, .post-meta
+  {
+    text-transform:uppercase;
+    color:#008F8C;
+  }
+
+  article.post figure img
+  {
+    border:1px solid #015958;
+    padding:2px;
+    border-radius:4px;
+    margin: 5px auto;
+  }
+
+
+/*Footer*/
+#colophon h6
+{
+  padding:20px;
+  margin:0;
+  text-align:center;
+  color:#0FC2C0;
+  font-size:.9rem;
+}
+  
+#colophon
+{
+  background-color:#023535;
+}
+
+#colophon h6 a:link, #colophon h6 a:visited 
+{
+  color: #0FC2C0;
+}
+
+/* Color Theme Swatches in Hex */
+.Teals-1-hex { color: #0FC2C0; }
+.Teals-2-hex { color: #0CABA8; }
+.Teals-3-hex { color: #008F8C; }
+.Teals-4-hex { color: #015958; }
+.Teals-5-hex { color: #023535; }
+
+/* Color Theme Swatches in RGBA */
+.Teals-1-rgba { color: rgba(15, 194, 192, 1); }
+.Teals-2-rgba { color: rgba(12, 171, 168, 1); }
+.Teals-3-rgba { color: rgba(0, 143, 140, 1); }
+.Teals-4-rgba { color: rgba(1, 89, 88, 1); }
+.Teals-5-rgba { color: rgba(2, 53, 53, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Teals-1-hsla { color: hsla(179, 85, 40, 1); }
+.Teals-2-hsla { color: hsla(178, 86, 35, 1); }
+.Teals-3-hsla { color: hsla(178, 100, 28, 1); }
+.Teals-4-hsla { color: hsla(179, 97, 17, 1); }
+.Teals-5-hsla { color: hsla(180, 92, 10, 1); }
